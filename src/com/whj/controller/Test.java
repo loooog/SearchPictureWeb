@@ -17,6 +17,12 @@ import com.whj.service.TestService;
 public class Test {
 	@Autowired
 	private TestService service;
+	
+	@RequestMapping("/newlogin.do")
+	public String newlogin(){
+		System.out.println("newlogin");
+		return "/login/login.html";
+	}
 	@RequestMapping("/show.do")
 	public String show(){
 		System.out.println("showshowshowshowshowshowshowshow");
@@ -50,6 +56,8 @@ public class Test {
 	public void loginPage(){
 		System.out.println("loginPage");
 	}
+	
+	
 	@RequestMapping("/login.do")
 	public ModelAndView login(String username,String password){
 		System.out.println("login");

@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -15,7 +17,7 @@
 
         <div class="link link-teacher">
             <span class="icon"></span>
-            <a href="#" class="button" data-title="teacher's login">
+            <a href="${pageContext.request.contextPath}/test/register.do" class="button" data-title="teacher's login">
                 <span class="line line-top"></span>
                 <span class="line line-right"></span>
                 <span class="line line-bottom"></span>
@@ -26,7 +28,7 @@
 
         <div class="link link-student">
             <span class="icon"></span>
-            <a href="#" class="button" data-title="student's login">
+            <a href="${pageContext.request.contextPath}/test/loginPage.do"" class="button" data-title="student's login">
                 <span class="line line-top"></span>
                 <span class="line line-right"></span>
                 <span class="line line-bottom"></span>
