@@ -18,11 +18,11 @@ jQuery(function($){
         fit_landscape      : 0,    // Landscape images will not exceed browser width
 
         // Components
-        slide_links        : 'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+        slide_links        : 'name',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
         slides             : [    // Slideshow Images
-                                 {image : '/SearchPictureWeb/static/image/backgrounds/1.jpg'},
-                                 {image : '/SearchPictureWeb/static/image/backgrounds/2.jpg'},
-                                 {image : '/SearchPictureWeb/static/image/backgrounds/3.jpg'}
+                                 {image : '/SearchPictureWeb/static/img/backgrounds/1.jpg'},
+                                 {image : '/SearchPictureWeb/static/img/backgrounds/2.jpg'},
+                                 {image : '/SearchPictureWeb/static/img/backgrounds/3.jpg'}
                        ]
 
     });

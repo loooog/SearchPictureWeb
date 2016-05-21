@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>搜图神器-登录</title>
+        <title>搜图神器-注册</title>
         <link rel="shortcut icon" type="image/x-icon" href="/SearchPictureWeb/static/img/logo.ico" />
 		<meta name="keywords" content="图片，搜图，图片下载，美图" />
 		<meta name="description" content="搜图神器" />
@@ -12,7 +12,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="/SearchPictureWeb/static/css/reset.css">
         <link rel="stylesheet" href="/SearchPictureWeb/static/css/supersized.css">
-        <link rel="stylesheet" href="/SearchPictureWeb/static/css/login/style.css">
+        <link rel="stylesheet" href="/SearchPictureWeb/static/css/signUp/style.css">
 
     </head>
 
@@ -24,16 +24,15 @@
                 <h2>海量图片&nbsp;想搜就搜</h2>
             </div>
             <div class="login-box">
-                <h1>登录</h1>
-                <form action="" method="post">
-                    <input type="text" name="username" class="username" placeholder="用户名">
+                <h1>注册</h1>
+                <form method="post">
+                    <input type="text" name="username" class="username" placeholder="手机号码">
                     <input type="password" name="password" class="password" placeholder="密码">
-                    <button type="submit">登录</button>
+                    <a class="sendCode" onclick="checkCode()">免费获取短信验证码</a>
+                    <input type="text" name="code" class="code" placeholder="验证码">                
+                    <button type="submit" class="signUp" onclick="checkSign()">注册</button>
                     <div class="error"><span>+</span></div>
                 </form>
-                <div class="forgetpsd">
-                    <a href="#">忘记密码？</a>
-                </div>
             </div>
         </div>
         <div class="footer">
@@ -43,7 +42,7 @@
         <script src="/SearchPictureWeb/static/js/jquery-1.8.2.min.js"></script>
         <script src="/SearchPictureWeb/static/js/supersized.3.2.7.min.js"></script>
         <script src="/SearchPictureWeb/static/js/supersized-init.js"></script>
-        <script src="/SearchPictureWeb/static/js/login/scripts.js"></script>
+        <script src="/SearchPictureWeb/static/js/signUp/scripts.js"></script>
 
     </body>
 

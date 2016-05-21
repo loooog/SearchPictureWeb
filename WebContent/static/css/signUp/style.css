@@ -49,7 +49,7 @@ body {
   position: absolute;
   right: 240px;
   width: 325px;
-  height: 284px;  
+  height: 325px;  
   padding: 25px 10px;
   background: #2d2d2d;
   background: rgba(45,45,45,.15);
@@ -110,16 +110,15 @@ input:focus {
         0 2px 7px 0 rgba(0,0,0,.2);
 }
 
-button {
+button,.sendCode{
     cursor: pointer;
-    width: 300px;
-    height: 44px;
+    height: 42px;
     margin-top: 25px;
     padding: 0;
-    background: #24abe2;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
+    background: #24abe2;
     border: 1px solid #24abe6;
     -moz-box-shadow:
         0 15px 30px 0 rgba(255,255,255,.25) inset,
@@ -139,9 +138,27 @@ button {
     -moz-transition: all .2s;
     -webkit-transition: all .2s;
     -ms-transition: all .2s;
+
 }
 
-button:hover {
+button{
+    width: 300px;
+}
+
+.sendCode{
+    display: block;
+    width: 160px;
+    line-height: 42px;
+    float: left;
+    margin-left: 4px;
+}
+
+input.code{
+    width: 76px;
+    margin-left: 30px;
+}
+
+button,.sendCode:hover {
     -moz-box-shadow:
         0 15px 30px 0 rgba(255,255,255,.15) inset,
         0 2px 7px 0 rgba(0,0,0,.2);
@@ -153,7 +170,7 @@ button:hover {
         0 2px 7px 0 rgba(0,0,0,.2);
 }
 
-button:active {
+button,.sendCode:active {
     -moz-box-shadow:
         0 15px 30px 0 rgba(255,255,255,.15) inset,
         0 2px 7px 0 rgba(0,0,0,.2);
@@ -163,8 +180,8 @@ button:active {
     box-shadow:        
         0 5px 8px 0 rgba(0,0,0,.1) inset,
         0 1px 4px 0 rgba(0,0,0,.1);
-
-    border: 0px solid #ef4300;
+        border: 0px;
+        
 }
 
 .error {
@@ -193,21 +210,6 @@ button:active {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
 
-}
-
-.forgetpsd{
-    margin-top: 15px;
-    position: absolute;
-    right: 30px;
-}
-
-.forgetpsd a{
-    font-size: 14px;
-    color: #DEDCDC;
-}
-
-.forgetpsd a:hover{
-    text-decoration: underline;
 }
 
 .footer{
