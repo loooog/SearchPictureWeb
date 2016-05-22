@@ -80,11 +80,11 @@ body {
 	position: absolute;
 	top: 0;
 	left: 545px;
-	background: url(/SearchPictureWeb/static/img/index/searchBtn.jpg);
+	background: url(../../img/index/searchBtn.jpg);
 	overflow: hidden;
 }
 .search-container .search-box a:hover{
-	background: url(/SearchPictureWeb/static/img/index/searchBtn2.jpg);
+	background: url(../../img/index/searchBtn2.jpg);
 }
 
 .img-container{
