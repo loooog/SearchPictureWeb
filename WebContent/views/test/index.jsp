@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Insert title here  </title>
 <script src="/ChatRoom/static/jquery-1.11.2.js" type="text/javascript"></script>
 <script type="text/javascript">
 	 function showUser(){
@@ -35,6 +35,7 @@
 </head>
 <body>
 学生学籍管理系统
+${pageContext.request.contextPath}
 
 </br>
 <a href="${pageContext.request.contextPath}/test/loginPage.do">登录</a>

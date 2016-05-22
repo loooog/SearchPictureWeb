@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class index {
 	@RequestMapping()
 	public String index(){
-		return "test/index";
+		return "test/index.jsp";
 	}
 }
