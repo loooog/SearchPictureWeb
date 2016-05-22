@@ -64,11 +64,11 @@ public class Test {
 		ModelAndView mv = new ModelAndView();
 		User user=service.login(username, password);
 		if(user!=null){
-			mv.setViewName("test/registerSubmit");
+			mv.setViewName("test/registerSubmit.jsp");
 			mv.addObject(user);
 			return mv;
 		}else{
-			mv.setViewName("test/loginPage");
+			mv.setViewName("test/loginPage.jsp");
 			return mv;
 		}
 		
