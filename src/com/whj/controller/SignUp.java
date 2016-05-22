@@ -4,11 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/index.do")
-public class Index {
+@RequestMapping("/signUp.do")
+public class SignUp {
 	@RequestMapping()
-	public String index(){
-		System.out.println("进入首页！");
-		return "index/index.html";
+	public String signUpPage(){
+	System.out.println("进入注册页面！");
+	return "signUp/signUp.html";
 	}
 }

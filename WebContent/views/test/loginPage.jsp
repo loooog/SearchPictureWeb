@@ -7,7 +7,7 @@
 <title>login</title>
 </head>
 <body>
-<form method="post" action="${pageContext.request.contextPath}/test/login">  
+<form method="post" action="${pageContext.request.contextPath}/test/login.do">  
 username:<input type="text" name="username" value="${user.username}"><br/>  
 password:<input type="password" name="password"><br/>  
 <input type="submit" value="登录"/>  
