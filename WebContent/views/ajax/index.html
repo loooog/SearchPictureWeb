@@ -13,13 +13,13 @@
 		$("#getMes").click(function(){
 			$.ajax({
 				type: "post",
-				name: "wenhuaijun",
-				password: "85684778",
-				url:"http://localhost:8080/SearchPictureWeb/login/requestLogin.do",
-				dataType: "html",
+				 name: "123",
+				password: "123",
+				url:"/SearchPictureWeb/login/requestLogin.do",
+				dataType: "json",
 				success: function(data, textStatus){
 
-					$("#container").html(data);
+					$("#container").html(data.username);
 
 
 				},
