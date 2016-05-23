@@ -38,9 +38,9 @@ public class Login {
 	public @ResponseBody String requestLogin(String username,String password){
 		System.out.println("ÇëÇóµÇÂ¼£¡");
 	//	ModelAndView mv = new ModelAndView();
-		User user=service.login(username, password);
+		//User user=service.login(username, password);
 		String result = null;
-		if(user!=null){
+		if(result!=null){
 			System.out.println("result: "+result);
 			result = "{\"status\":\"200\",\"info\":\"ok\"}";
 			return result;
