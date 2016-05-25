@@ -15,9 +15,9 @@
 				type: "post",
 				name: "wenhuaijun",
 				password: "85684778",
-				url:"http://localhost:8080/SearchPictureWeb/login/requestLogin.do",
-				dataType: "html",
-				success: function(data, textStatus){
+				url:"http://redrock.alien95.cn/know/login.php",
+				dataType: "jsonp",
+				success: function(data){
 
 					$("#container").html(data);
 

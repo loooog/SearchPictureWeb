@@ -1,3 +1,15 @@
+$('form :input').blur(function(){
+    if($(this).is('.username')){
+        if(this.value.length!=11){
+            var errorMsg='请输入正确的手机号码'；
+            $(this).append('<div class="formTip error"><span>'+errorMsg+'</span></div>');
+        }else{
+            $(this).append('<div class="formTip right"></div>');
+        }
+    }
+});
+
+
 function checkCode(){
     var form=$('.page-container form');
     var username = form.find('.username').val();
