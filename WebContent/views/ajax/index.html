@@ -13,13 +13,21 @@
 		$("#getMes").click(function(){
 			$.ajax({
 				type: "post",
+<<<<<<< HEAD
 				name: "wenhuaijun",
 				password: "85684778",
 				url:"http://redrock.alien95.cn/know/login.php",
 				dataType: "jsonp",
 				success: function(data){
+=======
+				 name: "123",
+				password: "123",
+				url:"/SearchPictureWeb/login/requestLogin.do",
+				dataType: "json",
+				success: function(data, textStatus){
+>>>>>>> d98bfe5f28284453f4b15ef8bbad7f615140b4be
 
-					$("#container").html(data);
+					$("#container").html(data.username);
 
 
 				},

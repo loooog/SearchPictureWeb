@@ -9,6 +9,6 @@ public class Index {
 	@RequestMapping()
 	public String index(){
 		System.out.println("½øÈëÊ×Ò³£¡");
-		return "index/index.html";
+		return "../index.html";
 	}
 }

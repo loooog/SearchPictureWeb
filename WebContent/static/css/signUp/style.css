@@ -174,30 +174,32 @@ button,.sendCode:active {
         
 }
 
-.login-box .fornTip{
-
+.login-box .right{
+    width: 40px;
+    background: rgba(45, 45, 45, .25) url(../../img/right.png) no-repeat;
 }
 
 .login-box .error {
+    background: rgba(45, 45, 45, .25) url(../../img/Error.png) no-repeat;
+}
+
+.login-box .formTip{
     position: absolute;
-    top: 27px;
     left: 325px;
-    width: 180px;
     height: 40px;
-    text-align: center;
-    background: rgba(45,45,45,.25) url(../../img/Error.png) no-repeat;
-    background-position: 5px center;
+    background-position: 7px center;
     background-size: 25px 25px;
     -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
     border-radius: 8px;
 }
 
 .login-box .error span {
     display: inline-block;
     font-size: 14px;
-    margin-left: 30px;
+    margin-left: 35px;
     line-height: 40px;
+    width: 100%;
+    text-align: left;
 }
 
 .footer{

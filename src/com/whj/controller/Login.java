@@ -34,26 +34,32 @@ public class Login {
 			return mv;
 		}
 }
-	@RequestMapping(value ="/requestLogin.do")
-	public @ResponseBody String requestLogin(String username,String password){
+	@RequestMapping(value ="/requestLogin.do" )
+	public @ResponseBody User requestLogin(String username,String password){
 		System.out.println("ÇëÇóµÇÂ¼£¡");
 	//	ModelAndView mv = new ModelAndView();
-		//User user=service.login(username, password);
+		User user=service.login(username, password);
 		String result = null;
-		if(result!=null){
+		if(user!=null){
+			return user;
+		}else{
+			user = new User("hehe", "hehe");
+			return user;
+		}
+		/*if(result!=null){
 			System.out.println("result: "+result);
 			result = "{\"status\":\"200\",\"info\":\"ok\"}";
 			return result;
-			/*mv.setViewName("test/registerSubmit.jsp");
+			mv.setViewName("test/registerSubmit.jsp");
 			mv.addObject(user);
-			return mv;*/
+			return mv;
 		}else{
 			result = "{\"status\":\"404\",\"info\":\"error\"}";
 			System.out.println("result: "+result);
 			return result;
-			/*mv.setViewName("login/login.html");
+			mv.setViewName("login/login.html");
 			//mv.setViewName("test/loginPage.jsp");
-			return mv;*/
-		}
+			return mv;
+		}*/
 }
 }
