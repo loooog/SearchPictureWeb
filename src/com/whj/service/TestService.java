@@ -22,7 +22,11 @@ public class TestService implements TestServiceImpl{
 		users.put("password", password);
 		int i =testDao.addUser(users);
 		System.out.println("i========>"+i);
-		return true;
+		if(i==1){
+			return true;
+		}else{
+			return false;
+		}
 	}
 	@Override
 	public User login(String username, String password) {

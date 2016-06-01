@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c104f2af-8c1d-416f-badb-d7861a1abfb0" name="Default" comment="注册表单验证&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/static/js/index/supersized-init.js" />
-      <change type="DELETED" beforePath="F:\github\SearchPictureWeb\.settings\org.eclipse.core.resources.prefs" afterPath="" />
-      <change type="DELETED" beforePath="F:\github\SearchPictureWeb\WebContent\static\img\right .png" afterPath="" />
-      <change type="DELETED" beforePath="F:\github\SearchPictureWeb\build\classes\.gitignore" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/whj/controller/Index.java" afterPath="$PROJECT_DIR$/src/com/whj/controller/Index.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/whj/controller/Login.class" afterPath="$PROJECT_DIR$/build/classes/com/whj/controller/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/whj/controller/Login.java" afterPath="$PROJECT_DIR$/src/com/whj/controller/Login.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/whj/service/TestService.class" afterPath="$PROJECT_DIR$/build/classes/com/whj/service/TestService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/database.properties" afterPath="$PROJECT_DIR$/WebContent/database.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/views/ajax/index.html" afterPath="$PROJECT_DIR$/WebContent/views/ajax/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/static/js/signUp/scripts.js" afterPath="$PROJECT_DIR$/WebContent/static/js/signUp/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/views/signUp/signUp.html" afterPath="$PROJECT_DIR$/WebContent/views/signUp/signUp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/static/css/signUp/style.css" afterPath="$PROJECT_DIR$/WebContent/static/css/signUp/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="F:\github\SearchPictureWeb\WebContent\views\index\index.html" afterPath="$PROJECT_DIR$/WebContent/index.html" />
-      <change type="MOVED" beforePath="F:\github\SearchPictureWeb\build\classes\com\whj\controller\index.class" afterPath="$PROJECT_DIR$/build/classes/com/whj/controller/Index.class" />
     </list>
     <ignored path="SearchPictureWeb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +38,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/static/js/signUp/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91376454">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5671642">
+              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -357,6 +344,13 @@
       <option name="number" value="Default" />
       <updated>1464173322799</updated>
     </task>
+    <task id="LOCAL-00001" summary="注册表单验证&#10;">
+      <created>1464319593405</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1464319593405</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -612,8 +606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/static/js/signUp/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91376454">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5671642">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
           <folding />
         </state>
       </provider>

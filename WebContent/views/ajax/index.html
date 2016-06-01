@@ -13,24 +13,19 @@
 		$("#getMes").click(function(){
 			$.ajax({
 				type: "post",
-<<<<<<< HEAD
-				name: "wenhuaijun",
-				password: "85684778",
-				url:"http://redrock.alien95.cn/know/login.php",
-				dataType: "jsonp",
-				success: function(data){
-=======
-				 name: "123",
-				password: "123",
 				url:"/SearchPictureWeb/login/requestLogin.do",
-				dataType: "json",
-				success: function(data, textStatus){
->>>>>>> d98bfe5f28284453f4b15ef8bbad7f615140b4be
-
-					$("#container").html(data.username);
-
-
+				data:{
+					username: "18883814056",
+					password: "123456",
 				},
+				dataType: "html",
+				success: function(data){
+					//$("#container").html(data.status);
+					  alert(data.info); 
+				},
+				error: function(jqXHR){     
+					   alert("发生错误：" + jqXHR.status);  
+					},
 
 			});
 		});

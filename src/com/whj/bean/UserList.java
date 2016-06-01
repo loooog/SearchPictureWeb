@@ -1,6 +1,4 @@
-package com.whj.controller;
-
-import com.whj.bean.User;
+package com.whj.bean;
 
 public class UserList{
 	private User[] User;

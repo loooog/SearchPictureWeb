@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import com.whj.service.TestService;
+import com.whj.bean.LoginResult;
 import com.whj.bean.User;
 
 @Controller
@@ -35,31 +36,25 @@ public class Login {
 		}
 }
 	@RequestMapping(value ="/requestLogin.do" )
-	public @ResponseBody User requestLogin(String username,String password){
+	public @ResponseBody LoginResult requestLogin(String username,String password){
 		System.out.println("ÇëÇóµÇÂ¼£¡");
-	//	ModelAndView mv = new ModelAndView();
+//		ModelAndView mv = new ModelAndView();
+		LoginResult result = new LoginResult();
 		User user=service.login(username, password);
-		String result = null;
 		if(user!=null){
-			return user;
+			System.out.println("login success!");
+			result.setUser(user);
+			result.setStatus("200");
+			return result;
 		}else{
-			user = new User("hehe", "hehe");
-			return user;
+			System.out.println("login error!");
+			user = new User();
+			user.setUsername(username);
+			user.setPassword(password);
+			result.setUser(user);
+			result.setStatus("401");
+			return result;
 		}
-		/*if(result!=null){
-			System.out.println("result: "+result);
-			result = "{\"status\":\"200\",\"info\":\"ok\"}";
-			return result;
-			mv.setViewName("test/registerSubmit.jsp");
-			mv.addObject(user);
-			return mv;
-		}else{
-			result = "{\"status\":\"404\",\"info\":\"error\"}";
-			System.out.println("result: "+result);
-			return result;
-			mv.setViewName("login/login.html");
-			//mv.setViewName("test/loginPage.jsp");
-			return mv;
-		}*/
-}
+		
+	}
 }
