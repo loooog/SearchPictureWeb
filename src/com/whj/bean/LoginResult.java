@@ -3,6 +3,7 @@ package com.whj.bean;
 public class LoginResult {
 	private User user;
 	private String status;
+	private String info;
 	public User getUser() {
 		return user;
 	}
@@ -14,6 +15,12 @@ public class LoginResult {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+	public String getInfo() {
+		return info;
+	}
+	public void setInfo(String info) {
+		this.info = info;
 	}
 	
 }

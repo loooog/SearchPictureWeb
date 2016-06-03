@@ -35,7 +35,7 @@ public class Login {
 			return mv;
 		}
 }
-	@RequestMapping(value ="/requestLogin.do" )
+	@RequestMapping(value ="/requestLogin.do")
 	public @ResponseBody LoginResult requestLogin(String username,String password){
 		System.out.println("请求登录！");
 //		ModelAndView mv = new ModelAndView();
@@ -45,13 +45,15 @@ public class Login {
 			System.out.println("login success!");
 			result.setUser(user);
 			result.setStatus("200");
+			result.setInfo("登录成功！");
 			return result;
 		}else{
 			System.out.println("login error!");
 			user = new User();
-			user.setUsername(username);
-			user.setPassword(password);
+			user.setUsername("");
+			user.setPassword("");
 			result.setUser(user);
+			result.setInfo("用户名或密码错误！");
 			result.setStatus("401");
 			return result;
 		}
